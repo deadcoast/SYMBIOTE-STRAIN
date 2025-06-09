@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symbiote-strain"
+version = "0.1.0"
+authors = [{ name = "ChatGPT", email = "author@example.com" }]
+description = "Evolutionary Conway-variant where five competing cell cultures fight, absorb, and mutate."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.25.0",
+    "toml>=0.10.0",
+    "matplotlib>=3.5.0",
+    "gymnasium>=0.28.0",
+    "stable-baselines3>=2.0.0",
+    "pygame>=2.5.0",
+    "scipy>=1.10.0",
+]
+
+[project.scripts]
+symbiote = "symbiote.cli:main"

@@ -1,3 +1,25 @@
+Metadata-Version: 2.4
+Name: symbiote-strain
+Version: 0.1.0
+Summary: Evolutionary Conway-variant where five competing cell cultures fight, absorb, and mutate.
+Author-email: ChatGPT <author@example.com>
+License: MIT
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.25.0
+Requires-Dist: toml>=0.10.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: gymnasium>=0.28.0
+Requires-Dist: stable-baselines3>=2.0.0
+Requires-Dist: pygame>=2.5.0
+Requires-Dist: scipy>=1.10.0
+Dynamic: license-file
+
 # SYMBIOTE STRAINS
 
 Evolutionary Conway‑variant where five competing cell cultures fight, absorb, and mutate.

@@ -1,3 +1,25 @@
+# SYMBIOTE STRAINS
+
+## OVERVIEW
+
+SYMBIOTE-STRAINS is an aesthetically pleasing, enhanced and upgraded version of"Game of Life" by John Horton Conway. Use his randomly procedural generation aspect as a base. We will need to modify and cater the algorithm to be more active, while still mainting the random generations, i simply want to speed it up. The algorithm should be designed to create "Symbiote Strains", these shapes are more root like.
+
+They Key difference in SYMBIOTE STRAINS will be that when a symbiote strain takes over another, it absorbs its cell to its own strain. Think of it like snake, when the snake eats a pebble in that game, it grows larger. This is the same idea, but applies to symbiote strain vs symbiote strain. When an enemy is defeated you get bigger.
+
+The game is called SYMBIOTE STRAINS, and its design is simple.
+
+First you will need to create an optimized algorithm taking all aspects of the game design into play.
+
+## GAMEPLAY LOOP
+
+Five Symbiote strains (teams) represented by colors, will battle on a ULTRA LARGE game board for their strains genetic success.
+All symbiote strains are made up of 4 Key roles:
+
+1. Symbiote Slime - The Main or Default Symbiote role
+2. Mitosis Sac - This role reproduces the symbiote strain, it should be balanced accordingly for how often it spawns.
+3. Defencer Strain - This role is to defend against another strain
+4. Attack Strain - This role is to attack other strains.
+
 Below is a **production-ready Python reference implementation** for **SYMBIOTE STRAINS**.
 It is entirely self-contained, fast on very large boards ( ≥ 4096×4096), and organised so you can drop individual modules into a bigger engine later (Textual, Pygame, WebGL, etc.).
 The code emphasises:

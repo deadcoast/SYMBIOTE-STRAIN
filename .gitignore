@@ -1,3 +1,4 @@
 /.DS_Store
 /.qodo
 /.venv
+.early.coverage

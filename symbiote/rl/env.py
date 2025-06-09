@@ -1,13 +1,13 @@
-"""A gym environment for the simulation."""
+"""A gymnasium environment for the simulation."""
 
-import gym
+import gymnasium as gym
 import numpy as np
 
 from symbiote.core import Simulation
 
 
 class SymbioteEnv(gym.Env):
-    """A gym environment for the symbiote simulation."""
+    """A gymnasium environment for the symbiote simulation."""
 
     def __init__(self):
         """Initialise the environment."""
@@ -20,7 +20,7 @@ class SymbioteEnv(gym.Env):
 
     def reset(self, *, seed=None, options=None):
         """Reset the environment to its initial state."""
-        super().reset(seed=seed, options=options)
+        super().reset(seed=seed)
         self.sim = Simulation(seed=seed)
         return self.sim.board, {}
 
@@ -29,13 +29,12 @@ class SymbioteEnv(gym.Env):
         _ = action  # unused
         self.sim.step()
         obs = self.sim.board
-        reward = 1.0
-        done = not np.any(self.sim.board)
+        terminated = not np.any(self.sim.board)
+        truncated = False
+        reward = 0.0 if terminated else 1.0
         info = {}
-        return obs, reward, done, False, info
+        return obs, reward, terminated, truncated, info
 
     def render(self, mode="human"):
         """Render the environment."""
         _ = mode  # unused
-        # not implemented
-        pass
