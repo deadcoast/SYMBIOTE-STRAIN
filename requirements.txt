@@ -1,0 +1,8 @@
+# Core dependencies
+numpy>=1.23.0
+toml>=0.10.0
+matplotlib>=3.5.0
+
+# Reinforcement Learning dependencies
+gymnasium>=0.28.0
+stable-baselines3>=2.0.0 
